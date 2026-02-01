@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="loft" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5f6ff" />
+      <stop offset="100%" stop-color="#e8eaf6" />
+    </linearGradient>
+    <linearGradient id="wood" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e8d6c5" />
+      <stop offset="100%" stop-color="#d1b89e" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#loft)" />
+  <rect y="430" width="1200" height="270" fill="url(#wood)" />
+  <polygon points="0,220 600,40 1200,220 1200,260 0,260" fill="#efe7f8" />
+  <rect x="120" y="280" width="320" height="160" rx="20" fill="#f3f8ff" stroke="#c6d6ef" stroke-width="6" />
+  <rect x="760" y="260" width="280" height="200" rx="20" fill="#fdfaf4" stroke="#d8cdbb" stroke-width="6" />
+  <rect x="780" y="470" width="240" height="80" rx="18" fill="#f2ede6" stroke="#d8cdbb" stroke-width="5" />
+  <circle cx="260" cy="200" r="50" fill="#ffffff" opacity="0.7" />
+  <circle cx="320" cy="200" r="35" fill="#ffffff" opacity="0.7" />
+  <rect x="520" y="480" width="160" height="120" rx="20" fill="#f8f2ff" stroke="#d2c1ea" stroke-width="6" />
+  <rect x="560" y="520" width="80" height="80" rx="16" fill="#fff" stroke="#d2c1ea" stroke-width="5" />
+</svg>

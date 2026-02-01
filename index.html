@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healing Escape: Castle Claymount</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div>
+        <h1>Healing Escape: Castle Claymount</h1>
+        <p class="subtitle">10분 동안 힐링 공간을 탐험하며 문을 열어주세요.</p>
+      </div>
+      <div class="timer" aria-live="polite">
+        <span>남은 시간</span>
+        <strong id="timer">10:00</strong>
+      </div>
+    </header>
+
+    <main class="game">
+      <section class="scene" aria-live="polite">
+        <div class="scene-header">
+          <h2 id="room-title">정원 휴식실</h2>
+          <div class="scene-actions">
+            <button class="nav-button active" data-room="garden">정원</button>
+            <button class="nav-button" data-room="tea">차실</button>
+            <button class="nav-button" data-room="loft">다락</button>
+          </div>
+        </div>
+
+        <div class="room active" id="room-garden" data-room="garden">
+          <button class="hotspot" data-id="windchime" style="left: 15%; top: 20%;">풍경</button>
+          <button class="hotspot" data-id="pond" style="left: 10%; top: 62%;">연못</button>
+          <button class="hotspot" data-id="gate" style="left: 78%; top: 52%;">정문</button>
+          <button class="hotspot" data-id="bench" style="left: 58%; top: 50%;">벤치</button>
+        </div>
+
+        <div class="room" id="room-tea" data-room="tea">
+          <button class="hotspot" data-id="cushion" style="left: 16%; top: 60%;">쿠션</button>
+          <button class="hotspot" data-id="teatable" style="left: 40%; top: 72%;">찻상</button>
+          <button class="hotspot" data-id="drawer" style="left: 76%; top: 60%;">서랍</button>
+          <button class="hotspot" data-id="window" style="left: 15%; top: 30%;">창문</button>
+        </div>
+
+        <div class="room" id="room-loft" data-room="loft">
+          <button class="hotspot" data-id="planter" style="left: 48%; top: 72%;">화분</button>
+          <button class="hotspot" data-id="bookshelf" style="left: 20%; top: 45%;">책장</button>
+          <button class="hotspot" data-id="musicbox" style="left: 72%; top: 58%;">오르골</button>
+          <button class="hotspot" data-id="desk" style="left: 66%; top: 38%;">책상</button>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <section class="panel">
+          <h3>소지품</h3>
+          <div id="inventory" class="inventory"></div>
+          <p class="hint">아이템을 선택한 뒤 방의 요소를 눌러 사용하세요.</p>
+        </section>
+        <section class="panel">
+          <h3>메모</h3>
+          <ul id="journal" class="journal"></ul>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-content">
+      <h3 id="modal-title"></h3>
+      <p id="modal-text"></p>
+      <div id="modal-actions" class="modal-actions"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
